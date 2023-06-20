@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script> 
+
+	
+	//Função que pula linhas (OBS. a tag <hr> separa um texto entre linhas).
+	function pulaLinha () {
+		document.write("<br><hr><br>");
+	}
+
+	//Função que mostra resultados (OBS. a tag <big> aumenta o texto apresentado).
+	function mostra (frase){
+		document.write("<big>"+frase+"</big>");
+		pulaLinha();
+	}
+
+	//Parâmetros que alimentam a função abaixo (soma).
+	soma(6, 4);
+	//Função que soma os parâmetros designados.
+	function soma (n1, n2){
+
+		mostra("A soma de "+n1+ " + "+ n2+" é : "+(n1+n2));
+	}
+
+	//Parâmetros que alimentam a função abaixo (subtração).
+	subtracao(650,7);
+	//Função que subtrai os parâmetros designados.
+	function subtracao (n1, n2){
+
+		mostra("A subtração de "+n1+ " - "+ n2+" é : "+(n1-n2));
+	}
+
+	//Parâmetros que alimentam a função abaixo (divisão).
+	divisao(1242,26);
+	//Função que divide os parâmetros designados.
+	function divisao(n1,n2){
+		mostra("A divisão de "+n1+" / "+n2+" é : "+(n1/n2));
+	}
+
+	//Parâmetros que alimentam a função abaixo (multiplicação).
+	multiplicacao(650,7);
+	//Função que multiplica os parâmetros designados.
+	function multiplicacao(n1,n2){
+		mostra("A multiplicação de "+n1+" X "+n2+" é : "+(n1*n2));
+	}
+
+
+ 
+</script>
